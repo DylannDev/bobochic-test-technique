@@ -1,0 +1,155 @@
+:root {
+  font-family: "Hanken Grotesk";
+  letter-spacing: -0.01em;
+  color: #0b0b0c;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 49px;
+  font-weight: 900;
+  line-height: 64px;
+  letter-spacing: -0.01em;
+}
+
+h2 {
+  font-size: 31px;
+  font-weight: 700;
+  line-height: 35px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: -0.01em;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 256px 40px 256px;
+  gap: 64px;
+}
+
+.section-promo,
+.section-promo-inactive {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 854px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+
+  li {
+    list-style: none;
+    border: 1.5px solid #d9d9d9;
+    border-radius: 8px;
+    padding: 16px 24px 16px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+
+    .code-promo-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 8px 16px 8px 16px;
+      border-radius: 8px;
+      border: 1.5px dashed #737373;
+      width: fit-content;
+      gap: 8px;
+
+      button {
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+      }
+    }
+
+    .code-promo-btn.inactive {
+      color: #d9d9d9;
+      border: 1.5px dashed #d9d9d9;
+    }
+
+    .expiration-date {
+      text-align: center;
+      span {
+        color: #14c802;
+      }
+    }
+
+    .expiration-date.inactive {
+      span {
+        color: #e80206;
+      }
+    }
+  }
+
+  .italic-text {
+    font-style: italic;
+  }
+}
+
+.cards p {
+  font-size: 12px;
+
+  span:not(.italic-text) {
+    font-weight: 700;
+  }
+}
+
+.cards.inactive p:not(.expiration-date) {
+  color: #737373;
+}
+
+.infos-cards {
+  display: flex;
+  gap: 16px;
+  padding: 16px 24px 16px 24px;
+  border-radius: 8px;
+  border: 1.5px solid #d9d9d9;
+  background-color: #f2f2f2;
+
+  p {
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+    text-align: left;
+  }
+
+  a {
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    border-radius: 8px;
+    background-color: #0b0b0c;
+    color: #fff;
+    text-decoration: none;
+
+    span {
+      padding: 0 8px;
+      font-weight: 600;
+    }
+  }
+}
