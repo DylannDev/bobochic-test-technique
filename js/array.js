@@ -1,4 +1,4 @@
-export const activeCodePromo = [
+export const codePromo = [
   {
     id_cart_rule: 1,
     date_from: "2024-02-01 10:00:00",
@@ -39,11 +39,8 @@ export const activeCodePromo = [
     condition:
       "Offre valable uniquement en France Métropolitaine. Non cumulable avec une autre offre promotionnelle en cours. Offre valable lors d’un paiement avec une carte cadeau.",
   },
-];
-
-export const inactiveCodePromo = [
   {
-    id_cart_rule: 1,
+    id_cart_rule: 5,
     date_from: "2024-01-01 10:00:00",
     date_to: "2024-01-23 10:00:00",
     description:
@@ -53,7 +50,7 @@ export const inactiveCodePromo = [
       "Offre valable uniquement en France Métropolitaine. Non cumulable avec une autre offre promotionnelle en cours. Offre valable lors d’un paiement avec une carte cadeau.",
   },
   {
-    id_cart_rule: 2,
+    id_cart_rule: 6,
     date_from: "2024-01-24 10:00:00",
     date_to: "2024-02-02 10:00:00",
     description:
