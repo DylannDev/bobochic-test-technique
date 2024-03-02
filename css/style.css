@@ -78,11 +78,24 @@ h3 {
       border: 1.5px dashed #737373;
       width: fit-content;
       gap: 8px;
+      cursor: pointer;
 
       button {
         border: none;
         background-color: transparent;
         cursor: pointer;
+      }
+    }
+
+    .description {
+      a {
+        color: #0b0b0c;
+      }
+    }
+
+    .description.inactive {
+      a {
+        color: #737373;
       }
     }
 
@@ -93,6 +106,7 @@ h3 {
     .code-promo-btn.inactive {
       color: #d9d9d9;
       border-color: #d9d9d9;
+      cursor: auto;
 
       button {
         display: none;
