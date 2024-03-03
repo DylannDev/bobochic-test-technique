@@ -376,4 +376,23 @@ h3 {
   }
 }
 
+/* prefooter */
+
+.reassurance-prefooter {
+  display: flex;
+  padding: 40px 64px;
+  gap: 54px;
+  background-color: #1a1a1a;
+
+  .text-reassurance {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: "Poppins";
+    font-weight: 900;
+    font-size: 12px;
+    color: #fff;
+  }
+}
+
 /* footer */
