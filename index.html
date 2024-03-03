@@ -8,114 +8,136 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
-    <header></header>
+    <header>
+      <div class="background">
+        <div class="header-banner">
+          <p class="tagline">
+            Découvrez notre sélection de produits en stock livrés chez vous en
+            10 jours
+          </p>
+          <div class="select-group">
+            <div class="first-select">
+              <img
+                src="/images/globe.svg"
+                alt="icon globe to illustrate the change of language"
+              />
+              <select name="language" id="language">
+                <option value="french">🇫🇷FR</option>
+                <option value="english">🇬🇧EN</option>
+              </select>
+              <!-- <img src="/images/caret-down.svg" alt="open drop-down menu" /> -->
+            </div>
+            <hr />
+            <div>
+              <select name="language-2" id="language-2">
+                <option value="french">Français</option>
+                <option value="english">Anglais</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="header-main">
+          <img src="/images/icon.svg" alt="menu icon" />
+          <img src="/images/Vector.svg" alt="menu icon" />
+          <div class="search-input">
+            <img
+              src="/images/magnifying-glass.svg"
+              alt="icon magnifying glass of search area"
+            />
+            <input type="text" placeholder="Rechercher..." />
+          </div>
+          <div class="help">
+            <img
+              src="/images/circle-question.svg"
+              alt="icon help and contact"
+            />
+            <span>Aide & Contact</span>
+          </div>
+          <img src="/images/user.svg" alt="open user profile" />
+          <img src="/images/panier.svg" alt="open the cart" />
+        </div>
+        <nav class="header-nav">
+          <p>french days</p>
+          <a href="#">Retours offerts</a>
+          <a href="#">Livraisons express</a>
+          <a href="#">Octobre Rose</a>
+          <a href="#"
+            ><span>Conciergerie</span
+            ><img src="/images/caret-down.svg" alt="open dropdown menu"
+          /></a>
+          <a href="#">Espace Pro</a>
+        </nav>
+        <div class="breadcrumb">
+          <div class="tree-structure">
+            <a href="#"
+              ><img
+                src="/images/house.svg"
+                alt="icon to back at bobochic home"
+              /><span>Accueil</span></a
+            >
+            <img src="/images/caret-right.svg" alt="caret tree structure" />
+            <a href="#">Page 1</a>
+            <img src="/images/caret-right.svg" alt="caret tree structure" />
+            <a href="#">Page 2</a>
+            <img src="/images/caret-right.svg" alt="caret tree structure" />
+            <a href="#">Page 3</a>
+            <img
+              src="/images/caret-right-white.svg"
+              alt="caret tree structure"
+            />
+            <a href="#">Page 4</a>
+          </div>
+        </div>
+        <div class="header-text">
+          <h1>Code promo Bobochic</h1>
+          <h2>découvrez tous les codes promo actifs sur le site Bobochic</h2>
+          <p>
+            <strong>Bobochic</strong> est une marque 100 % française qui
+            s’impose sur le marché de l’ameublement comme incontournable. En
+            effet, notre équipe travaille quotidiennement pour créer de nouveaux
+            designs, coloris, paternes tout en pensant ergonomie et esthétisme.
+            Vous pourrez retrouver des meubles tels que des canapés, des meubles
+            de cuisine, de salle de bain, des lits, des tables basses, des
+            bureaux, des bibliothèques ou encore des accessoires de décoration.
+          </p>
+        </div>
+      </div>
+    </header>
 
     <main class="content">
       <section class="section-promo">
         <h2>Code promo</h2>
-        <ul class="cards">
-          <li>
-            <div class="code-promo-btn">
-              <button>
-                <img src="/images/copy.svg" alt="icon text copy" />
-              </button>
-              <h3>VENTEFLASH</h3>
-            </div>
-            <p class="expiration-date">
-              Valide jusqu’au <span>04/03/2024</span>
-            </p>
-            <p>
-              Bénéficiez d'une réduction sur une sélection de canapés et lits en
-              velours côtelé, dans la limite des stocks disponibles. Offre non
-              valable pour l’achat sur les de produits porteurs de la mention
-              <span>"produit non remisé"</span> sur la fiche produit. Offre
-              valable du <span>25/02/2025</span> à <span>10h</span> au
-              <span>04/03/2024</span> à <span>10h</span>.
-            </p>
-            <p class="italic-text">
-              Offre valable uniquement en France Métropolitaine. Non cumulable
-              avec une autre offre promotionnelle en cours. Offre valable lors
-              d’un paiement avec une carte cadeau.
-            </p>
-          </li>
-          <li>
-            <div class="code-promo-btn btn-active">
-              <button>
-                <img src="/images/copy.svg" alt="icon text copy" />
-              </button>
-              <h3>VENTEFLASH</h3>
-            </div>
-            <p class="expiration-date">
-              Valide jusqu’au <span>04/03/2024</span>
-            </p>
-            <p>
-              Bénéficiez d'une réduction sur une sélection de canapés et lits en
-              velours côtelé, dans la limite des stocks disponibles. Offre non
-              valable pour l’achat sur les de produits porteurs de la mention
-              <span>"produit non remisé"</span> sur la fiche produit. Offre
-              valable du <span>25/02/2025</span> à <span>10h</span> au
-              <span>04/03/2024</span> à <span>10h</span>.
-            </p>
-            <p class="italic-text">
-              Offre valable uniquement en France Métropolitaine. Non cumulable
-              avec une autre offre promotionnelle en cours. Offre valable lors
-              d’un paiement avec une carte cadeau.
-            </p>
-          </li>
-          <li>
-            <div class="code-promo-btn btn-active">
-              <button>
-                <img src="/images/copy.svg" alt="icon text copy" />
-              </button>
-              <h3>VENTEFLASH</h3>
-            </div>
-            <p class="expiration-date">
-              Valide jusqu’au <span>04/03/2024</span>
-            </p>
-            <p>
-              Bénéficiez d'une réduction sur une sélection de canapés et lits en
-              velours côtelé, dans la limite des stocks disponibles. Offre non
-              valable pour l’achat sur les de produits porteurs de la mention
-              <span>"produit non remisé"</span> sur la fiche produit. Offre
-              valable du <span>25/02/2025</span> à <span>10h</span> au
-              <span>04/03/2024</span> à <span>10h</span>.
-            </p>
-            <p class="italic-text">
-              Offre valable uniquement en France Métropolitaine. Non cumulable
-              avec une autre offre promotionnelle en cours. Offre valable lors
-              d’un paiement avec une carte cadeau.
-            </p>
-          </li>
-          <li>
-            <div class="code-promo-btn btn-active">
-              <button>
-                <img src="/images/copy.svg" alt="icon text copy" />
-              </button>
-              <h3>VENTEFLASH</h3>
-            </div>
-            <p class="expiration-date">
-              Valide jusqu’au <span>04/03/2024</span>
-            </p>
-            <p>
-              Bénéficiez d'une réduction sur une sélection de canapés et lits en
-              velours côtelé, dans la limite des stocks disponibles. Offre non
-              valable pour l’achat sur les de produits porteurs de la mention
-              <span>"produit non remisé"</span> sur la fiche produit. Offre
-              valable du <span>25/02/2025</span> à <span>10h</span> au
-              <span>04/03/2024</span> à <span>10h</span>.
-            </p>
-            <p class="italic-text">
-              Offre valable uniquement en France Métropolitaine. Non cumulable
-              avec une autre offre promotionnelle en cours. Offre valable lors
-              d’un paiement avec une carte cadeau.
-            </p>
-          </li>
-        </ul>
+        <ul class="cards"></ul>
+        <div style="display: none">
+          <ul class="cards">
+            <li class="card">
+              <div class="code-promo-btn">
+                <button>
+                  <img src="/images/copy.svg" alt="icon text copy" />
+                </button>
+                <h3 class="code-promo">VENTEFLASH</h3>
+              </div>
+              <p class="expiration-date">
+                Valide jusqu’au <span>04/03/2024</span>
+              </p>
+              <p class="description">
+                Bénéficiez d'une réduction sur une sélection de canapés et lits
+                en velours côtelé, dans la limite des stocks disponibles. Offre
+                non valable pour l’achat sur les de produits porteurs de la
+                mention
+                <span>"produit non remisé"</span> sur la fiche produit. Offre
+                valable du <span>25/02/2025</span> à <span>10h</span> au
+                <span>04/03/2024</span> à <span>10h</span>.
+              </p>
+              <p class="italic-text condition"></p>
+            </li>
+          </ul>
+        </div>
 
         <div class="infos-cards">
           <p>
@@ -125,60 +147,17 @@
           </p>
           <a href="#">
             <span>Page Parrainage</span
-            ><img src="/images/caret-right.svg" alt="icon arrow" />
+            ><img src="/images/caret-right-white.svg" alt="icon arrow" />
           </a>
         </div>
       </section>
       <section class="section-promo-inactive">
         <h2 class="title-main-section">Code promo inactif</h2>
-        <ul class="cards inactive">
-          <li>
-            <div class="code-promo-btn inactive">
-              <h3>SOLDE2024</h3>
-            </div>
-            <p class="expiration-date inactive">
-              Valide jusqu’au <span>04/03/2024</span>
-            </p>
-            <p>
-              Bénéficiez d'une réduction sur une sélection de canapés et lits en
-              velours côtelé, dans la limite des stocks disponibles. Offre non
-              valable pour l’achat sur les de produits porteurs de la mention
-              <span>"produit non remisé"</span> sur la fiche produit. Offre
-              valable du <span>25/02/2025</span> à <span>10h</span> au
-              <span>04/03/2024</span> à <span>10h</span>.
-            </p>
-            <p class="italic-text">
-              Offre valable uniquement en France Métropolitaine. Non cumulable
-              avec une autre offre promotionnelle en cours. Offre valable lors
-              d’un paiement avec une carte cadeau.
-            </p>
-          </li>
-          <li>
-            <div class="code-promo-btn inactive">
-              <h3>VENTEFLASH</h3>
-            </div>
-            <p class="expiration-date inactive">
-              Valide jusqu’au <span>04/03/2024</span>
-            </p>
-            <p>
-              Bénéficiez d'une réduction sur une sélection de canapés et lits en
-              velours côtelé, dans la limite des stocks disponibles. Offre non
-              valable pour l’achat sur les de produits porteurs de la mention
-              <span>"produit non remisé"</span> sur la fiche produit. Offre
-              valable du <span>25/02/2025</span> à <span>10h</span> au
-              <span>04/03/2024</span> à <span>10h</span>.
-            </p>
-            <p class="italic-text">
-              Offre valable uniquement en France Métropolitaine. Non cumulable
-              avec une autre offre promotionnelle en cours. Offre valable lors
-              d’un paiement avec une carte cadeau.
-            </p>
-          </li>
-        </ul>
+        <ul class="cards cards-inactive"></ul>
       </section>
     </main>
 
     <footer></footer>
-    <script src="/js/script.js"></script>
+    <script type="module" src="/js/script.js"></script>
   </body>
 </html>
